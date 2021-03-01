@@ -37,6 +37,8 @@ modules-right = spotify network_up cpu memory gpu audio date
 cursor-click = pointer
 cursor-scroll = ns-resize
 
+tray-position = right
+
 [module/spotify]
 type = custom/script
 exec = ~/.config/polybar/player.py -f '{title} by {artist}'
