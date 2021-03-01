@@ -9,7 +9,7 @@ fourth = #c740ab
 alert = #ed404c
 
 [bar/main]
-width = 100%:-48
+width = 100%:-72
 offset-x = 24
 offset-y = 24
 
@@ -38,6 +38,8 @@ cursor-click = pointer
 cursor-scroll = ns-resize
 
 tray-position = right
+tray-padding = 3
+tray-offset-x = 20
 
 [module/spotify]
 type = custom/script
