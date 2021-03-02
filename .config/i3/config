@@ -10,6 +10,7 @@ gaps top 60
 
 floating_modifier $mod
 bindsym $mod+f fullscreen toggle
+bindsym $mod+shift+f floating toggle
 
 # Lock screen
 bindsym $mod+Shift+q exec "dm-tool switch-to-greeter"
@@ -90,7 +91,8 @@ bindsym $mod+Shift+r restart
 
 # Setup wallpaper
 exec_always --no-startup-id "feh --bg-fill -z ~/Pictures/wallpapers"
-exec_always --no-startup-id pkill picom; picom --no-use-damage --experimental-backends --backend glx
+exec_always --no-startup-id pkill picom; picom -b --no-use-damage --experimental-backends --backend glx
+exec_always --no-startup-id picom-trans -s 80
 exec_always --no-startup-id pkill dunst; dunst
 exec_always --no-startup-id ~/.config/polybar/launch.sh
 exec_always --no-startup-id autotiling
