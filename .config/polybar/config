@@ -1,7 +1,8 @@
 [colors]
-baackground = #fa1e2137
-background = #33000000
-primary = #00cc99
+background = #66000000
+primary = #fff
+foreground = #ffffff
+secondary = #555
 
 [bar/main]
 width = 100%:-30
@@ -83,11 +84,11 @@ label-focused-foreground = ${colors.primary}
 label-focused-padding = 0 
 
 label-unfocused = ${self.label-focused}
-label-unfocused-foreground = #0a7383
+label-unfocused-foreground = ${colors.secondary}
 label-unfocused-padding = ${self.label-focused-padding}
 
 label-visible = ${self.label-focused}
-label-visible-foreground = #0a7383
+label-visible-foreground = ${colors.secondary}
 label-visible-padding = ${self.label-focused-padding}
 
 label-urgent = ${self.label-focused}
