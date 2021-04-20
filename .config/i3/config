@@ -5,8 +5,8 @@ font SFMono Nerd Font Mono:pango:monospace 8
 # Set gap
 for_window [class=".*"] border pixel 0
 gaps outer 4
-gaps inner 20
-gaps top 60
+gaps inner 10
+gaps top 40
 
 floating_modifier $mod
 bindsym $mod+f fullscreen toggle
