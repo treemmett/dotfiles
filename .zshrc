@@ -5,6 +5,7 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
+export GTK_THEME=Adwaita:dark
 export PATH=$HOME/.bin:$PATH
 export ZSH_THEME="powerlevel10k/powerlevel10k"
 export ZSH="/home/treemmett/.oh-my-zsh"
@@ -16,8 +17,8 @@ source /usr/share/nvm/init-nvm.sh
 alias wp="feh --bg-fill -z ~/Pictures/wallpapers"
 alias vi="vim"
 alias geth="geth --datadir /data/ethereum"
-alias mine="~/scripts/mine-start.sh"
 alias cgit="git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME"
+alias open="xdg-open"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
