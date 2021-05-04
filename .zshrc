@@ -19,6 +19,7 @@ alias vi="vim"
 alias geth="geth --datadir /data/ethereum"
 alias cgit="git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME"
 alias open="xdg-open"
+alias resource="source .zshrc"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
